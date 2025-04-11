@@ -111,7 +111,7 @@ function App() {
             <div className="flex items-center">
               <a href="#" className="flex items-center h-ful">
               <img
-                src="/logo.png"
+                src="./logo.png"
                 alt="Incore Tec"
                 className={`transition-all duration-300 object-contain ${
             isScrolled ? 'h-10' : 'h-[110px]'
