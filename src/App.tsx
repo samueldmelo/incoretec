@@ -104,11 +104,11 @@ function App() {
       <nav className={`nav-fixed fixed w-full transition-all duration-300 bg-gray-900 ${
     isScrolled
       ? 'py-2 min-h-[70px] z-50'
-      : 'py-4 min-h-[130px] z-0'}`}>
+      : 'py-4 min-h-[130px] z-50'}`}>
         
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
     <div className="flex items-center justify-between h-full">
-            <div className="flex items-center">
+            <div className="flex items-center z-10">
               <a href="#" className="flex items-center h-ful">
               <img
                 src="/logo.png"
@@ -122,7 +122,7 @@ function App() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center z-20 space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
