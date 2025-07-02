@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Code2, Smartphone, Zap, Notebook as Robot, Server, ChevronRight, MessageSquare, Instagram, Linkedin, Github, Phone, Mail, MapPin, MessageCircle, Cpu, Shield, Menu, X } from 'lucide-react';
+import { Code2, Smartphone, Zap, Notebook as Robot, Server, ChevronRight, MessageSquare,Camera,Video,
+  Megaphone,
+  ShoppingCart,
+  Search,
+  Rocket, Instagram, Linkedin, Github, Wand2,
+  Users, Phone, Mail, MapPin, MessageCircle, Cpu, Shield, Menu, X } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -216,108 +222,142 @@ function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="py-20 relative scroll-reveal">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-glow">O Núcleo da Inovação</h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-            Somos o núcleo por trás das soluções mais rápidas e eficientes do Brasil. 
-            Se é possível, a gente automatiza. Se não for, a gente cria.
-          </p>
-        </div>
-      </section>
+<section id="about" className="py-20 relative scroll-reveal">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl md:text-5xl font-bold mb-8 text-glow">O Núcleo da Inovação</h2>
+    <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+      Somos mais que uma tech. A InCore‑Tec é o núcleo estratégico por trás de marcas que querem <strong>vender, crescer e automatizar</strong>.
+      Entregamos soluções sob medida em <strong>tecnologia, e-commerce e performance</strong> — sempre com velocidade e visão de negócio.
+    </p>
+  </div>
+</section>
+
 
       {/* Services Section */}
-      <section id="services" className="py-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-16 text-glow scroll-reveal">Nossos Serviços</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Code2 className="w-10 h-10" />,
-                title: 'Sistemas Web',
-                description: 'Desenvolvimento de sistemas web modernos e responsivos'
-              },
-              {
-                icon: <Smartphone className="w-10 h-10" />,
-                title: 'Aplicativos',
-                description: 'Apps nativos e multiplataforma de alta performance'
-              },
-              {
-                icon: <Zap className="w-10 h-10" />,
-                title: 'Landing Pages 24h',
-                description: 'Páginas de alta conversão por apenas R$599,99'
-              },
-              {
-                icon: <Robot className="w-10 h-10" />,
-                title: 'Automação',
-                description: 'Automatize processos e aumente a produtividade'
-              },
-              {
-                icon: <Server className="w-10 h-10" />,
-                title: 'Infraestrutura',
-                description: 'Suporte técnico especializado 24/7'
-              },
-              {
-                icon: <Cpu className="w-10 h-10" />,
-                title: 'Consultoria em TI',
-                description: 'Orientação estratégica para sua empresa'
-              }
-            ].map((service, index) => (
-              <div 
-                  key={index} 
-                  className="service-card glass-effect p-8 rounded-2xl scroll-reveal"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="service-icon text-blue-400 mb-6">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-300">
-                    {service.description}
-                  </p>
-                </div>
-            ))}
+<section id="services" className="py-20 relative">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-4xl font-bold text-center mb-16 text-glow scroll-reveal">
+      Nossos Serviços
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+       
+        {
+          icon: <Camera className="w-10 h-10" />,
+          title: 'Fotos Still e Lifestyle',
+          description: 'Imagens profissionais com fundo branco ou ambientadas para e-commerce.'
+        },
+        {
+          icon: <Video className="w-10 h-10" />,
+          title: 'Vídeos de Produtos',
+          description: 'Vídeos curtos que demonstram valor e aumentam conversão.'
+        },
+        {
+          icon: <Megaphone className="w-10 h-10" />,
+          title: 'Campanhas com Modelos',
+          description: 'Ensaios com modelos para humanizar e vender mais.'
+        },
+           {
+          icon: <Zap className="w-10 h-10" />,
+          title: 'Landing Pages 24h',
+          description: 'Páginas otimizadas para conversão por apenas R$599,99.'
+        },
+        {
+          icon: <Robot className="w-10 h-10" />,
+          title: 'Automação com Bot',
+          description: 'Automatize processos e ganhe escala com robôs e integrações.'
+        },
+        {
+          icon: <Cpu className="w-10 h-10" />,
+          title: 'Consultoria em TI',
+          description: 'Planejamento estratégico e diagnóstico de tecnologia.'
+        },
+        {
+          icon: <ShoppingCart className="w-10 h-10" />,
+          title: 'Gestão de Marketplaces',
+          description: 'Da criação ao anúncio, cuidamos da sua operação no Shopee, Meli, Amazon e mais.'
+        },
+        {
+          icon: <Search className="w-10 h-10" />,
+          title: 'SEO para Produtos',
+          description: 'Títulos, descrições e categorias otimizadas para ranquear e vender mais.'
+        },
+        {
+          icon: <Rocket className="w-10 h-10" />,
+          title: 'Lançamento de Produtos',
+          description: 'Criação estratégica de novos produtos com identidade forte e alta conversão.'
+        }
+      ].map((service, index) => (
+        <div 
+          key={index} 
+          className="service-card glass-effect p-8 rounded-2xl scroll-reveal"
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
+          <div className="service-icon text-blue-400 mb-6">
+            {service.icon}
           </div>
+          <h3 className="text-xl font-bold text-white mb-3">
+            {service.title}
+          </h3>
+          <p className="text-gray-300">
+            {service.description}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Features Section */}
-      <section id="projects" className="py-20 relative scroll-reveal">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-16 text-glow">Nossos Diferenciais</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Zap className="w-8 h-8" />,
-                title: 'Entrega em 24h',
-                description: 'Sua landing page pronta para usar em tempo recorde'
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: '6 Meses de Suporte',
-                description: 'Suporte técnico gratuito para sua tranquilidade'
-              },
-              {
-                icon: <Code2 className="w-8 h-8" />,
-                title: 'Preço Fixo',
-                description: 'R$599,99 - sem surpresas ou custos adicionais'
-              }
-            ].map((feature, index) => (
-              <div key={index} 
-                className="glass-effect p-6 rounded-xl flex items-start space-x-4 scroll-reveal"
-                style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="text-blue-400">{feature.icon}</div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
-                  <p className="text-gray-300">{feature.description}</p>
-                </div>
-              </div>
-            ))}
+<section id="projects" className="py-20 relative scroll-reveal">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-4xl font-bold text-center mb-16 text-glow">Nossos Diferenciais</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          icon: <Zap className="w-8 h-8" />,
+          title: 'Entrega Acelerada',
+          description: 'Landings, cadastros e automações prontos em tempo recorde.'
+        },
+        {
+          icon: <Wand2 className="w-8 h-8" />,
+          title: 'Soluções 360º',
+          description: 'Tecnologia, marketing e operação — tudo num só lugar.'
+        },
+        {
+          icon: <Users className="w-8 h-8" />,
+          title: 'Campanhas Humanizadas',
+          description: 'Modelos reais e conteúdo visual que conecta com o cliente.'
+        },
+        {
+          icon: <Search className="w-8 h-8" />,
+          title: 'SEO Focado em Vendas',
+          description: 'Títulos, descrições e categorias que ranqueiam e convertem.'
+        },
+        {
+          icon: <Rocket className="w-8 h-8" />,
+          title: 'Performance em Marketplaces',
+          description: 'Dominamos Shopee, Mercado Livre, Amazon e Magalu.'
+        },
+        {
+          icon: <Shield className="w-8 h-8" />,
+          title: 'Suporte Estendido',
+          description: 'Acompanhamento estratégico após a entrega do projeto.'
+        }
+      ].map((feature, index) => (
+        <div key={index} 
+          className="glass-effect p-6 rounded-xl flex items-start space-x-4 scroll-reveal"
+          style={{ animationDelay: `${index * 0.1}s` }}>
+          <div className="text-blue-400">{feature.icon}</div>
+          <div>
+            <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+            <p className="text-gray-300">{feature.description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 scroll-reveal">
@@ -415,98 +455,124 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 py-16 relative border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">In-Core Tec</h3>
-              <p className="text-gray-400 mb-6">
-                Transformando o futuro através da tecnologia, um projeto de cada vez.
-              </p>
+   {/* Footer */}
+<footer className="bg-gray-900 py-16 relative border-t border-gray-800">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      
+      {/* Marca */}
+      <div>
+        <h3 className="text-2xl font-bold text-white mb-6">In-Core Tec</h3>
+        <p className="text-gray-400 mb-6">
+          Mais que uma tech — somos o núcleo por trás das soluções que aceleram marcas e vendem de verdade.
+        </p>
+        {/* Redes sociais */}
+        <div className="flex space-x-4">
+          <a href="https://www.instagram.com/incoretec/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+            <Instagram className="w-6 h-6" />
+          </a>
+          <a href="https://www.linkedin.com/company/incoretec" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+            <Linkedin className="w-6 h-6" />
+          </a>
+          <a href="https://github.com/samueldmelo/incoretec" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+            <Github className="w-6 h-6" />
+          </a>
+        </div>
+      </div>
 
-
-              { //REDES SOCIAIS*************
-              
-              /*<div className="flex space-x-4">
-                <a href="https://www.instagram.com/incoretec/" className="text-gray-400 hover:text-white transition-colors">
-                  <Instagram className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Github className="w-6 h-6" />
-                </a>
-              </div>*/}
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-white mb-6">Contato</h4>
-              <div className="space-y-4">
-                <div className="flex items-center text-gray-400">
-                  <Phone className="w-5 h-5 mr-3" />
-                  <span>(11) 94989-1952</span>
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <Mail className="w-5 h-5 mr-3" />
-                  <span>contato@incoretec.com.br</span>
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <MapPin className="w-5 h-5 mr-3" />
-                  <span>São Paulo, SP</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-white mb-6">Serviços</h4>
-              <ul className="space-y-3 text-gray-400">
-                <li>Desenvolvimento Web</li>
-                <li>Aplicativos Mobile</li>
-                <li>Landing Pages</li>
-                <li>Automação</li>
-                <li>Suporte Técnico</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-white mb-6">Newsletter</h4>
-              <p className="text-gray-400 mb-4">
-                Receba novidades e atualizações sobre tecnologia
-              </p>
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-                <input
-                  type="email"
-                  name = "user_email"
-                  required
-                  placeholder="Seu e-mail"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
-                />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Inscrever-se
-                </button>
-                {submitStatus === 'success' && (
-                <p className="text-green-400 text-center">Mensagem enviada com sucesso!</p>
-              )}
-              {submitStatus === 'error' && (
-                <p className="text-red-400 text-center">Erro ao enviar mensagem. Tente novamente.</p>
-              )}
-              </form>
-            </div>
+      {/* Contato */}
+      <div>
+        <h4 className="text-lg font-bold text-white mb-6">Contato</h4>
+        <div className="space-y-4 text-gray-400">
+          <div className="flex items-center">
+            <Phone className="w-5 h-5 mr-3" />
+            <span>(11) 94989-1952</span>
+          </div>
+          <div className="flex items-center">
+            <Mail className="w-5 h-5 mr-3" />
+            <span>contato@incoretec.com.br</span>
+          </div>
+          <div className="flex items-center">
+            <MapPin className="w-5 h-5 mr-3" />
+            <span>São Paulo, SP</span>
           </div>
         </div>
+      </div>
 
-        {/* WhatsApp Button */}
-        <a
-          href="https://wa.me/5511949891952?text=Ol%C3%A1%2C%20gostaria%20de%20conhcer%20o%20N%C3%BAcleo."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 animate-float"
-        >
-          <MessageCircle className="w-6 h-6" />
-        </a>
-      </footer>
+      {/* Serviços atualizados */}
+  <div>
+  <h4 className="text-lg font-bold text-white mb-6">Serviços</h4>
+  <div className="flex flex-col md:flex-row gap-12">
+    
+    {/* Coluna E-commerce */}
+    <div>
+      <h5 className="text-white font-semibold text-sm mb-2">E-commerce</h5>
+      <ul className="space-y-2 text-gray-400">
+        <li>Fotos Still e Lifestyle</li>
+        <li>Vídeos de Produtos</li>
+        <li>SEO para Marketplaces</li>
+        <li>Cadastro de Produtos</li>
+        <li>Gestão de Marketplaces</li>
+        <li>Campanhas com Modelos</li>
+      </ul>
+    </div>
+
+    {/* Coluna Tecnologia */}
+    <div>
+      <h5 className="text-white font-semibold text-sm mb-2">Tecnologia</h5>
+      <ul className="space-y-2 text-gray-400">
+        <li>Desenvolvimento Web</li>
+        <li>Aplicativos Mobile</li>
+        <li>Landing Pages</li>
+        <li>Automação com Bots</li>
+        <li>Infraestrutura e Suporte</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      {/* Newsletter */}
+      <div>
+        <h4 className="text-lg font-bold text-white mb-6">Newsletter</h4>
+        <p className="text-gray-400 mb-4">
+          Receba estratégias, atualizações e insights direto do núcleo.
+        </p>
+        <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="email"
+            name="user_email"
+            required
+            placeholder="Seu e-mail"
+            className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+          />
+          <button
+            type="submit"
+            className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Inscrever-se
+          </button>
+          {submitStatus === 'success' && (
+            <p className="text-green-400 text-center">Mensagem enviada com sucesso!</p>
+          )}
+          {submitStatus === 'error' && (
+            <p className="text-red-400 text-center">Erro ao enviar mensagem. Tente novamente.</p>
+          )}
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/5511949891952?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20N%C3%BAcleo."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 animate-float"
+  >
+    <MessageCircle className="w-6 h-6" />
+  </a>
+</footer>
     </div>
   );
 }
