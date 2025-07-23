@@ -237,7 +237,7 @@ function App() {
     <h2 className="text-3xl md:text-5xl font-bold mb-8 text-glow">O Núcleo da Inovação</h2>
     <p className="text-xl text-blue-200 max-w-3xl mx-auto">
       Somos mais que uma tech. A InCore‑Tec é o núcleo estratégico por trás de marcas que querem <strong>vender, crescer e automatizar</strong>.
-      Entregamos soluções sob medida em <strong>tecnologia, e-commerce e performance</strong> — sempre com velocidade e visão de negócio.
+      Entregamos soluções sob medida em <strong>tecnologia, e-commerce e performance</strong> <br />sempre com velocidade e visão de negócio.
     </p>
   </div>
 </section>
@@ -474,7 +474,7 @@ function App() {
       <div>
         <h3 className="text-2xl font-bold text-white mb-6">In-Core Tec</h3>
         <p className="text-gray-400 mb-6">
-          Mais que uma tech — somos o núcleo por trás das soluções que aceleram marcas e vendem de verdade.
+          Mais que uma tech, somos o núcleo por trás das soluções que aceleram marcas e vendem de verdade.
         </p>
         {/* Redes sociais */}
         <div className="flex space-x-4">
@@ -484,9 +484,7 @@ function App() {
           <a href="https://www.linkedin.com/company/incoretec" target="_blank" className="text-gray-400 hover:text-white transition-colors">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="https://github.com/samueldmelo/incoretec" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-            <Github className="w-6 h-6" />
-          </a>
+          
         </div>
       </div>
 
@@ -571,6 +569,10 @@ function App() {
         </form>
       </div>
     </div>
+  </div>
+   {/* Rodapé institucional */}
+  <div className="mt-12 border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+    © {new Date().getFullYear()} In-Core Tec — CNPJ 61.878.707/0001-90. Todos os direitos reservados.
   </div>
 
   {/* WhatsApp Button */}
