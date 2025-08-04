@@ -234,10 +234,11 @@ function App() {
       {/* About Section */}
 <section id="about" className="py-20 relative scroll-reveal">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 className="text-3xl md:text-5xl font-bold mb-8 text-glow">O Núcleo da Inovação</h2>
+    <h2 className="text-3xl md:text-5xl font-bold mb-8 text-glow">In-Core Digital</h2>
     <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-      Somos mais que uma tech. A InCore‑Tec é o núcleo estratégico por trás de marcas que querem <strong>vender, crescer e automatizar</strong>.
-      Entregamos soluções sob medida em <strong>tecnologia, e-commerce e performance</strong> <br />sempre com velocidade e visão de negócio.
+      <strong> Domine os marketplaces com estratégia.</strong> 
+ Acreditamos em uma verdadeira <strong> imersão digital</strong>, onde você aprende, aplica e escala.
+Combinamos tecnologia, performance e automação para fazer sua marca <strong> vender mais com inteligência.</strong>
     </p>
   </div>
 </section>
