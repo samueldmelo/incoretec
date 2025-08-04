@@ -224,7 +224,7 @@ function App() {
 <section className="relative w-full py-12 scroll-reveal">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <img
-      src="/bannerr.jpg"
+      src="/bane.jpg"
       alt="Banner promocional"
       className="w-full h-auto rounded-2xl shadow-lg object-cover"
     />
